@@ -7,7 +7,6 @@ void main() {
   //this called Declaretion
   int secondNumber;
   secondNumber = 10;
-
   int result = fristNumber + secondNumber;
   print(result);
   //double
@@ -15,6 +14,8 @@ void main() {
   double secondNumberDouble = 5;
   double resultDouble = fristNumberDouble + secondNumberDouble;
   print(resultDouble);
+  //if int or double u can use num
+  num myAge = 23;
   //Strings
   String fristName = "Abdullah";
   String lastName = "Shokr";
@@ -34,7 +35,7 @@ void main() {
   //Map<key,value>
   Map<String, String> info = {
     "name": "Abdullah Shokr",
-    "age": "23",
+    "age": "$myAge",
     "Address": "Egypt"
   };
   print(info["name"]);
@@ -52,4 +53,21 @@ void main() {
   const pi = 3.14;
   print(footer);
   print(pi);
+  //Arithmetic Operator
+  //+add
+  //-subtract
+  // *multiply
+  // /divide
+  if (18 < myAge) {
+    print("You Can go");
+  } else if (18 > myAge) {
+    print("Not allow to you to enter");
+  } else {
+    print("your age equal 18 , we will prevent you from some features");
+  }
+  // if null
+  var wv = null;
+  var rer = 4;
+  var sd = wv ?? rer;
+  print(sd);
 }
